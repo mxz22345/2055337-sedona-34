@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
@@ -40,7 +41,7 @@
     </header>
     <main class="main-index">
       <div class="welcome">
-        <h1>
+        <h1 class="welcome-title">
           <img class="welcome-img" src="images/welcome.svg" alt="welcome to gorgeous sedona" width="458" height="352">
         </h1>
       </div>
@@ -48,57 +49,57 @@
         <h2 class="advantages-title-main">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="advantages-description-main">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ol class="advantages-list">
-          <li class="advantages-item">
+          <li class="advantages-item background-blue">
             <h3 class="advantages-title">Настоящий городок</h3>
             <span class="advantages-number">— №1 —</span>
             <p class="advantages-description">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
-            <img class="advantages-photo" src="" alt="Фото городка Седона">
-            <ul class="advantages-sublist">
-              <li class="advantages-item">
-                <h4 class="advantages-title">Жилье</h4>
-                <p class="advantages-description">
+            <img class="advantages-photo" src="images/advantages-town.jpg" alt="Фото городка Седона">
+            <ul class="under-the-list">
+              <li class="under-the-list-item background-gray">
+                <h4 class="under-the-list-title">Жилье</h4>
+                <p class="under-the-list-description">
                   Рекомендуем пожить в настоящем мотеле, всё как в кино!
                 </p>
               </li>
-              <li class="advantages-item">
-                <h4 class="advantages-title">Еда</h4>
-                <p class="advantages-description">
+              <li class="under-the-list-item">
+                <h4 class="under-the-list-title">Еда</h4>
+                <p class="under-the-list-description">
                   Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
                 </p>
               </li>
-              <li class="advantages-item">
-                <h4 class="advantages-title">Сувениры</h4>
-                <p class="advantages-description">
+              <li class="under-the-list-item background-gray">
+                <h4 class="under-the-list-title">Сувениры</h4>
+                <p class="under-the-list-description">
                   Не только китайского, но и настоящего местного производства!
                 </p>
               </li>
             </ul>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item background-blue">
             <h3 class="advantages-title">Там есть мост дьявола</h3>
             <span class="advantages-number">— №2 —</span>
             <p class="advantages-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
-            <img class="advantages-photo" src="" alt="Мост Дьявола">
+            <img class="advantages-photo" src="images/advantages-bridge.jpg" alt="Мост Дьявола">
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item background-gray">
             <h3 class="advantages-title">Небольшая площадь</h3>
             <span class="advantages-number">— №3 —</span>
             <p class="advantages-description">
               Все достопримечательности находятся очень близко
             </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item background-dark-grey">
             <h3 class="advantages-title">Красивая дорога</h3>
             <span class="advantages-number">— №4 —</span>
             <p class="advantages-description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item background-gray">
             <h3 class="advantages-title">Мало туристов</h3>
             <span class="advantages-number">— №5 —</span>
             <p class="advantages-description">
@@ -117,7 +118,7 @@
         <a class="button search-button" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <section class="subscribe">
-        <h4 class="subscribe-title">Подпишитесь на рассылку</h4>
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">
           Только полезная информация и никакого спама,
           честное бойскаутское!
@@ -140,17 +141,17 @@
         <h3 class="visually-hidden">Социальные сети</h3>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="footer-social-button" href="https://vk.com/htmlacademy">
+            <a class="footer-social-button vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-button" href="https://t.me/htmlacademy">
+            <a class="footer-social-button telegram" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="footer-social-button" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="footer-social-button youtube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Ютуб</span>
             </a>
           </li>
@@ -158,7 +159,7 @@
       </section>
       <p class="footer-phone">
         <span class="visually-hidden">Контактный номер телефона</span>
-        <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </p>
       <a class="footer-copyright" href="https://htmlacademy.ru/">
         <span class="visually-hidden">Ссылка на сайт разработчика</span>

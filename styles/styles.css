@@ -1,0 +1,207 @@
+@font-face{
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+}
+@font-face{
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+}
+body{
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #ffffff;
+
+}
+.footer{
+    color: #000000;
+    background-color: #ffffff;
+}
+.header{
+    color: #000000;
+    background-color: #ffffff;
+}
+.navigation-link, .navigation-favorite, .navigation-search{
+    font-weight: 700;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+.main-index{
+    color: #000000;
+    background-color: #ffffff;
+    background-image: url("../images/background-welcome.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.filter-hotel{
+    color: #ffffff;
+    background-color: #000000;
+    background-image: url("../images/background-filter.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.subscribe{
+    color: #ffffff;
+    background-color: #000000;
+    background-image: url("../images/background-subscribe.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.hotel-card-title{
+    color: #000000;
+    text-decoration: none;
+}
+.advantages-title-main,
+.search-hotel,
+.subscribe-title,
+.catalog-title,
+.pagination{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+.advantages-description-main,
+.search-description,
+.subscribe-description{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+.advantages-title,
+.under-the-list-title,
+.hotel-card-rating,
+.hotel-card-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.advantages-description,
+.under-the-list-description,
+.advantages-number,
+.hotel-card-price,
+.select-control{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.inner-header-title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+}
+.breadcrumbs{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+.select-control, .filter-list{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.filter-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+.footer-phone{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    text-decoration: none;
+}
+.hotel-card-rating{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+.advantages-list,
+.under-the-list,
+.navigation-list,
+.navigation-user,
+.footer-social-list,
+.pagination-link,
+.hotel-card-link,
+.phone,
+.pagination{
+    list-style: none;
+    text-decoration: none;
+}
+.background-blue{
+    background: rgba(130, 179, 211, 1);
+}
+.background-gray{
+    background: rgba(131, 179, 211, 0.12);
+}
+.background-dark-grey{
+    background: rgba(131, 179, 211, 0.2);
+}
+.navigation-button{
+    background-color: #756157;
+    color: #ffffff;
+    text-decoration: none;
+}
+.search-button{
+    background-color: #756157;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.subscribe-button{
+    background: rgba(130, 179, 211, 1);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.hotel-card-more{
+    background-color: #756157;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.hotel-card-favorite{
+    background: rgba(130, 179, 211, 1);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.filter-apply{
+    background: rgba(130, 179, 211, 1);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.pagination-link{
+    background: rgba(130, 179, 211, 1);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
