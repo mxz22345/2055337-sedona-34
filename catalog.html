@@ -52,6 +52,9 @@
                   <a class="breadcrumbs-link breadcrumbs-link-icon" href="index.html">
                     <span class="visually-hidden">Главная</span></a>
                 </li>
+                <li>
+                  <div class="breadcrumbs-arrow"></div>
+                </li>
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link">Гостиницы</a>
                 </li>
@@ -106,27 +109,33 @@
                     </li>
                   </ul>
                 </fieldset>
-                <button class="button filter-apply" type="submit">Применить</button>
-                <button class="filter-reset" type="reset">Сбросить</button>
+                <div class="buttons-filter">
+                  <button class="button filter-apply" type="submit">Применить</button>
+                  <button class="filter-reset" type="reset">Сбросить</button>
+                </div>
               </form>
             </section>
           </div>
           <section class="catalog-hotel">
-            <h2 class="catalog-title">Найдено гостиниц:38</h2>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвое</option>
-              <option value="popular">Сначала популярное</option>
-              <option value="expensive">Сначала дорогое</option>
-            </select>
-            <button class="catalog-view-button catalog-view-button-current" type="button">
-              <span class="visually-hidden">Показать таблицу</span>
-            </button>
-            <button class="catalog-view-button" type="button">
-              <span class="visually-hidden">Показать карточки</span>
-            </button>
-            <button class="catalog-view-button" type="button">
-              <span class="visually-hidden">Показать список</span>
-            </button>
+            <div class="catalog-view">
+              <h2 class="catalog-title">Найдено гостиниц:38</h2>
+                <select class="select-control-view" aria-label="Сортировка">
+                  <option value="cheap">Сначала дешёвое</option>
+                  <option value="popular">Сначала популярное</option>
+                  <option value="expensive">Сначала дорогое</option>
+                </select>
+                <div class="buttons-view">
+                  <button class="catalog-view-button catalog-view-button-current" type="button">
+                    <span class="visually-hidden">Показать таблицу</span>
+                  </button>
+                  <button class="catalog-view-button" type="button">
+                    <span class="visually-hidden">Показать карточки</span>
+                  </button>
+                  <button class="catalog-view-button" type="button">
+                    <span class="visually-hidden">Показать список</span>
+                  </button>
+                </div>
+              </div>
             <ul class="hotel-list clear-list">
               <li class="hotel-card">
                 <a class="hotel-card-link" href="#">
@@ -177,34 +186,36 @@
                 <p class="button hotel-card-rating">Рейтинг: 5,0</p>
               </li>
             </ul>
-            <ul class="pagination clear-list">
-              <li class="pagination-item">
-                <a class="button pagination-link pagination-link-current">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button pagination-link" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button pagination-link" href="#">...</a>
-              </li>
-              <li class="pagination-item">
-                <a class="button pagination-link" href="#">10</a>
-              </li>
-            </ul>
-            <div class="select-control-inner">
-              <h3 class="select-control-title">Гостиниц на странице:</h3>
-              <select class="select-control" aria-label="Гостиниц на странице:">
-                <option value="4">4</option>
-                <option value="3">3</option>
-                <option value="2">2</option>
-                <option value="1">1</option>
-              </select>
+            <div class="pagination-container">
+              <ul class="pagination clear-list">
+                <li class="pagination-item">
+                  <a class="button pagination-link pagination-link-current">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="button pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="button pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="button pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="button pagination-link" href="#">...</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="button pagination-link" href="#">10</a>
+                </li>
+              </ul>
+              <div class="select-control-inner">
+                <h3 class="select-control-title">Гостиниц на странице:</h3>
+                <select class="select-control" aria-label="Гостиниц на странице:">
+                  <option value="4">4</option>
+                  <option value="3">3</option>
+                  <option value="2">2</option>
+                  <option value="1">1</option>
+                </select>
+              </div>
             </div>
           </section>
           <section class="subscribe-catalog">
