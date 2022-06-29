@@ -72,11 +72,11 @@ body {
 }
 
 .logo-container {
-  margin-left: 70px;
-  margin-right: 47px;
+  position: absolute;
 }
 
 .navigation-list {
+  padding-left: 186px;
   display: flex;
   flex-wrap: wrap; 
   width: 420px;
@@ -93,18 +93,32 @@ body {
   height: 18px;
   width: 18px;
   display: block;
-  padding: 23px 23px 23px 0px;
+  padding-top: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 25px;
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .navigation-favorite {
   width: 18px;
   height: 17px;
   display: block;
-  padding: 24px 32px 24px 0px;
+  padding-top: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 25px;
+  background-image: url(../images/favorite.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .navigation-button {
   display: block;
+  width: 130px;
+  margin-left: 20px;
   margin-top: 14px;
   margin-bottom: 14px;
 }
@@ -114,6 +128,9 @@ body {
 }
 
 .page-header {
+  width: 1060;
+  padding-left: 70px;
+  padding-right: 70px;
   color: #000000;
   background-color: #ffffff;
 }
@@ -353,7 +370,7 @@ body {
 }
 
 .subscribe-button {
-  margin-bottom: 94px;
+  width: 200px;
   padding: 12px 15px;
   font-size: 20px;
   line-height: 36px;
@@ -368,11 +385,17 @@ body {
 
 .subscribe {
   padding-top: 94px;
+  padding-bottom: 93px;
   color: #ffffff;
   background: #000000;
   background-image: url("../images/background-subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
 }
 
 .welcome {
@@ -384,9 +407,14 @@ body {
 
 .field {
   border-radius: 10px 0px 0px 10px;
+  width: 600px;
+  height: 60px;
+  padding: 0;
+  border: 0;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  background: #F2F2F2;
 }
 
 .filter-catalog {
@@ -439,7 +467,6 @@ body {
   margin-bottom: 70px;
   margin-right: 70px;
   border: 0px;
-
 }
 
 .filter {
@@ -489,8 +516,69 @@ body {
   line-height: 21px;
 }
 
+.hotel-list {
+  padding-bottom: 66px;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  column-gap: 18px;
+  padding-left: 73px;
+}
+
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-card-content {
+  padding: 20px;
+}
+
+.hotel-info-container {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  column-gap: 20px;
+  grid-template-rows: 37px 37px;
+  row-gap: 16px;
+}
+
+.star-container {
+  display: flex;
+  width: 140px;
+  height: 37px;
+}
+
+.star-icon {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 6px;
+  fill: #82B3D3;
+}
+
+.hotel-card-title {
+  margin: 0px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.hotel-card-price {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-card-rating {
+  margin: 0;
+  color: #333333;
+  background: #F2F2F2;
+}
+
+.hotel-card-stars {
+  fill: #82B3D3;
+}
+
 .subscribe-catalog {
   padding-top: 94px;
+  padding-bottom: 94px;
   text-align: center;
   background: #ffffff;
 }
@@ -538,22 +626,6 @@ body {
   color: #333333;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-}
-
-.hotel-card-title {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-}
-
-.hotel-card-price {
-  font-size: 18px;
-  line-height: 21px;
-}
-
-.hotel-card-rating {
-  color: #333333;
-  background: #F2F2F2;
 }
 
 .pagination {
@@ -662,6 +734,9 @@ body {
   padding-right: 13px;
   width: 24px;
   height: 14px;
+  background-image: url(../images/vk.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .telegram {
@@ -671,6 +746,9 @@ body {
   padding-right: 14px;
   width: 18px;
   height: 15px;
+  background-image: url(../images/telegram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .youtube {
@@ -680,6 +758,9 @@ body {
   padding-right: 14px;
   width: 22px;
   height: 17px;
+  background-image: url(../images/youtube.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .phone {
