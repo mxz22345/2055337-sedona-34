@@ -33,25 +33,29 @@
             </li>
             <li class="navigation-user-item">
               <a class="navigation-favorite" href="#">
+                <p class="favorites">12</p>
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
             <li class="navigation-user-item">
-              <a class="button navigation-button" href="#">Хочу туда</a>
+              <a class="button navigation-button brown-button" href="#">Хочу туда</a>
             </li>
           </ul>
         </nav>
       </header>
       <main class="main-inner main-container">
         <div class="page-container">
-          <div class="filter-catalog filter-container">
-            <header class="inner-header header-container">
+          <div class="filter-catalog">
+            <header class="inner-header">
               <h1 class="inner-header-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs clear-list">
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link breadcrumbs-link-icon" href="index.html">
-                    <span class="visually-hidden">Главная</span></a>
+                  <a class="breadcrumbs-link-icon" href="index.html">
+                    <span class="visually-hidden">Главная</span>
+                    <svg class="icon-home" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="m.2 6.1 6-5.5 6 5.5v6.2H.2V6.1Zm1 .4v4.8h10V6.5L6.2 2l-5 4.5Zm4 3.8h-1V6.8h4v3.5h-1V7.8h-2v2.5Z" fill="#fff"/></svg>
+                  </a>
                 </li>
+                <li>
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link">Гостиницы</a>
                 </li>
@@ -107,7 +111,7 @@
                   </ul>
                 </fieldset>
                 <div class="buttons-filter">
-                  <button class="button filter-apply" type="submit">Применить</button>
+                  <button class="button filter-apply  blue-button" type="submit">Применить</button>
                   <button class="filter-reset" type="reset">Сбросить</button>
                 </div>
               </form>
@@ -116,23 +120,26 @@
           <section class="catalog-hotel">
             <div class="catalog-view">
               <h2 class="catalog-title">Найдено гостиниц:38</h2>
-                <select class="select-control-view" aria-label="Сортировка">
-                  <option value="cheap">Сначала дешёвое</option>
-                  <option value="popular">Сначала популярное</option>
-                  <option value="expensive">Сначала дорогое</option>
-                </select>
-                <div class="buttons-view">
-                  <button class="catalog-view-button catalog-view-button-current" type="button">
-                    <span class="visually-hidden">Показать таблицу</span>
-                  </button>
-                  <button class="catalog-view-button" type="button">
-                    <span class="visually-hidden">Показать карточки</span>
-                  </button>
-                  <button class="catalog-view-button" type="button">
-                    <span class="visually-hidden">Показать список</span>
-                  </button>
-                </div>
+              <select class="select-control-view select-status" aria-label="Сортировка">
+                <option value="cheap">Сначала дешёвое</option>
+                <option value="popular">Сначала популярное</option>
+                <option value="expensive">Сначала дорогое</option>
+              </select>
+              <div class="buttons-view">
+                <button class="catalog-view-button catalog-view-button-current" type="button">
+                  <span class="visually-hidden">Показать таблицу</span>
+                  <svg class="icon-view" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 3H2v6h4V3ZM18 3h-4v6h4V3ZM12 3H8v6h4V3ZM6 11H2v6h4v-6ZM18 11h-4v6h4v-6ZM12 11H8v6h4v-6Z" fill="#000"/></svg>
+                </button>
+                <button class="catalog-view-button" type="button">
+                  <span class="visually-hidden">Показать карточки</span>
+                  <svg class="icon-view" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 15H2v2h16v-2ZM16 5v6H4V5h12Zm2-2H2v10h16V3Z" fill="#000"/></svg>
+                </button>
+                <button class="catalog-view-button" type="button">
+                  <span class="visually-hidden">Показать список</span>
+                  <svg class="icon-view" aria-hidden="true" focusable="false" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 3H2v2h2V3ZM18 3H6v2h12V3ZM4 7H2v2h2V7ZM18 7H6v2h12V7ZM4 11H2v2h2v-2ZM18 11H6v2h12v-2ZM4 15H2v2h2v-2ZM18 15H6v2h12v-2Z" fill="#000"/></svg>
+                </button>
               </div>
+            </div>
             <ul class="hotel-list clear-list">
               <li class="hotel-card">
                 <div class="hotel-card-content">
@@ -143,8 +150,8 @@
                   <div class="hotel-info-container">
                     <p class="hotel-card-price">Гостиница</p>
                     <p class="hotel-card-price">От 4000 ₽</p>
-                    <a class="hotel-card-more button" href="#">подробнее</a>
-                    <a class="hotel-card-favorite button" href="#">в избранное</a>
+                    <a class="hotel-card-more button brown-button" href="#">подробнее</a>
+                    <a class="hotel-card-favorite button blue-button" href="#">в избранное</a>
                     <div class="star-container">
                       <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
                       <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
@@ -164,8 +171,8 @@
                   <div class="hotel-info-container">
                     <p class="hotel-card-price">Гостиница</p>
                     <p class="hotel-card-price">От 5000 ₽</p>
-                    <a class="hotel-card-more button" href="#">подробнее</a>
-                    <a class="hotel-card-favorite button button-current" href="#">в избранное</a>
+                    <a class="hotel-card-more button brown-button" href="#">подробнее</a>
+                    <a class="hotel-card-favorite button blue-button button-current" href="#">в избранное</a>
                     <div class="star-container">
                       <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
                       <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
@@ -185,8 +192,8 @@
                   <div class="hotel-info-container">
                     <p class="hotel-card-price">Гостиница</p>
                     <p class="hotel-card-price">От 2500 ₽</p>
-                    <a class="hotel-card-more button" href="#">подробнее</a>
-                    <a class="hotel-card-favorite button" href="#">в избранное</a>
+                    <a class="hotel-card-more button brown-button" href="#">подробнее</a>
+                    <a class="hotel-card-favorite button blue-button" href="#">в избранное</a>
                     <div class="star-container">
                       <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
                       <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
@@ -205,8 +212,8 @@
                   <div class="hotel-info-container">
                     <p class="hotel-card-price">Гостиница</p>
                     <p class="hotel-card-price">От 1500 ₽</p>
-                    <a class="hotel-card-more button" href="#">подробнее</a>
-                    <a class="hotel-card-favorite button" href="#">в избранное</a>
+                    <a class="hotel-card-more button brown-button" href="#">подробнее</a>
+                    <a class="hotel-card-favorite button blue-button" href="#">в избранное</a>
                     <div class="star-container">
                       <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
                       <svg class="star-icon" aria-hidden="true" focusable="false" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/></svg>
@@ -222,24 +229,24 @@
                   <a class="button pagination-link pagination-link-current">1</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="button pagination-link" href="#">2</a>
+                  <a class="button pagination-link blue-button" href="#">2</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="button pagination-link" href="#">3</a>
+                  <a class="button pagination-link blue-button" href="#">3</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="button pagination-link" href="#">4</a>
+                  <a class="button pagination-link blue-button" href="#">4</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="button pagination-link" href="#">...</a>
+                  <a class="button pagination-link blue-button pagination-ellipsis" href="#">...</a>
                 </li>
                 <li class="pagination-item">
-                  <a class="button pagination-link" href="#">10</a>
+                  <a class="button pagination-link blue-button pagination-long-number" href="#">10</a>
                 </li>
               </ul>
               <div class="select-control-inner">
                 <h3 class="select-control-title">Гостиниц на странице:</h3>
-                <select class="select-control" aria-label="Гостиниц на странице:">
+                <select class="select-control-hotel select-status" aria-label="Гостиниц на странице:">
                   <option value="4">4</option>
                   <option value="3">3</option>
                   <option value="2">2</option>
@@ -265,7 +272,7 @@
                   required
                 >
               </form>
-              <button class="button subscribe-button" type="submit">Подписаться</button>
+              <button class="button subscribe-button blue-button" type="submit">Подписаться</button>
             </div>
           </section>
         </div>
@@ -278,16 +285,19 @@
               <li class="footer-social-item">
                 <a class="footer-social-button vk" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">ВКонтакте</span>
+                  <svg class="icon-footer" aria-hidden="true" focusable="false" width="25" height="14" fill="#83B3D3" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.95.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.19-.95-.74-.95H9.65c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H1.4C.65 0 .5.35.5.73c0 .68.89 4.07 4.14 8.55C6.81 12.34 9.87 14 12.65 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.68-.88.4 0 1.06.2 2.62 1.67C19.61 13.22 19.9 14 20.9 14h2.63c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.22-3.02-.6-.7-1.53-1.47-1.8-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"/></svg>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a class="footer-social-button telegram" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Телеграм</span>
+                  <svg class="icon-footer" aria-hidden="true" focusable="false" width="19" height="16" fill="#83B3D3" xmlns="http://www.w3.org/2000/svg"><path d="M17.29.1 1.34 6.25c-1.09.43-1.08 1.04-.2 1.31l4.1 1.28 9.47-5.98c.44-.27.85-.12.52.18L7.55 9.96l-.28 4.22c.41 0 .6-.19.83-.41l1.99-1.93 4.13 3.05c.77.42 1.31.2 1.5-.7l2.72-12.8C18.72.27 18-.23 17.29.09Z"/></svg>
                 </a>
               </li>
               <li class="footer-social-item">
                 <a class="footer-social-button youtube" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Ютуб</span>
+                  <svg class="icon-footer" aria-hidden="true" focusable="false" width="23" height="18" fill="#83B3D3" xmlns="http://www.w3.org/2000/svg"><path d="M19.1.5H3.68C1.81.5.5 2.1.5 3.9V14c0 1.9 1.31 3.5 3.17 3.5h15.66c1.64 0 3.17-1.6 3.17-3.4V3.9C22.28 2.1 20.97.5 19.1.5ZM8.17 13.04V4.96L15.5 9l-7.34 4.04Z"/></svg>
                 </a>
               </li>
             </ul>
@@ -298,7 +308,7 @@
           </p>
           <a class="footer-copyright" href="https://htmlacademy.ru/">
             <span class="visually-hidden">Ссылка на сайт разработчика</span>
-            <img src="images/logo-html.svg" alt="Логотип htmlacademy" width="115" height="33">
+            <svg class="logo-html" width="115" height="33" fill="#000" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg>
           </a>
         </div>
       </footer>
