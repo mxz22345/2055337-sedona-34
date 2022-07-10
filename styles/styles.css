@@ -1205,9 +1205,6 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 4px;
 }
 
-
-
-
 .modal-wrapper{
   position: fixed;
   top: 0;
