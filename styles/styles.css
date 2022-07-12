@@ -70,9 +70,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .navigation-link {
   display: block;
   padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 17px;
-  margin-right: 17px;
+  padding-bottom: 19px;
+  padding-left: 17px;
+  padding-right: 17px;
   font-size: 20px;
   font-weight: 700;
   text-align: center;
@@ -85,11 +85,16 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .navigation-link-current {
-  border-bottom: 2px solid #756257;
+  padding-bottom: 17px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 17px;
+  margin-right: 17px;
+  box-shadow: 0 2px 0 0 #756257;
 }
 
 .navigation-list {
-  padding-left: 186px;
+  padding-left: 169px;
   display: flex;
   flex-wrap: wrap; 
   width: 420px;
@@ -106,10 +111,10 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 18px;
   width: 18px;
   display: block;
-  padding-top: 24px;
+  padding-top: 23px;
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 25px;
+  padding-bottom: 23px;
   background-image: url(../images/search.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -122,7 +127,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-top: 24px;
   padding-left: 12px;
   padding-right: 12px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   background-image: url(../images/favorite.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -373,18 +378,25 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .search-description {
-  margin-top: 0;
-  margin-bottom: 68px;
+  margin: 0;
+  padding-left: 304px;
+  padding-right: 304px;
+  padding-bottom: 56px;
   color: #333333;
+}
+
+.search-description-one {
+  margin: 0;
+}
+
+.search-description-two {
+  margin: 0;
+  text-align: start;
 }
 
 .search-hotel {
   padding-top: 91px;
   background: #ffffff;
-}
-
-.field::placeholder {
-  padding-left: 22px;
 }
 
 .search-button {
@@ -393,7 +405,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: block;
   width: 544px;
   padding: 12px 15px;
-  margin-bottom: 105px;
+  margin-bottom: 93px;
   font-size: 20px;
   line-height: 36px;
 }
@@ -408,6 +420,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .subscribe-button {
+  font-family: "PT Sans";
   width: 200px;
   padding: 12px 15px;
   font-size: 20px;
@@ -423,7 +436,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .subscribe {
   padding-top: 94px;
-  padding-bottom: 93px;
+  padding-bottom: 94px;
   color: #ffffff;
   background: #000000;
   background-image: url("../images/background-subscribe.jpg");
@@ -549,6 +562,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .filter-reset {
+  font-family: "PT Sans";
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -569,11 +583,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .filter-apply {
+  font-family: "PT Sans";
   padding: 14px 15px;
   align-items: center;
   display: block;
   margin-bottom: 20px;
   background: #82B3D3;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .filter-title {
@@ -585,7 +602,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .buttons-filter {
-  padding-top: 60px;
+  padding-top: 58px;
   display: flex;
   flex-direction: column;
   width: 160px;
@@ -636,7 +653,6 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 4px;
 }
 
-
 .control-input:hover + .control-checkmark {
   background: rgba(255, 255, 255, 0.6);
 }
@@ -671,7 +687,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .hotel-card-content {
-  padding: 20px;
+  padding: 19px;
 }
 
 .hotel-info-container {
@@ -691,18 +707,21 @@ input[type="number"]::-webkit-inner-spin-button {
 .star-icon {
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 6px;
+  margin-right: 6px;
   fill: #82B3D3;
 }
 
 .hotel-card-title {
   margin: 0px;
+  padding-top: 12px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
 }
 
 .hotel-card-price {
+  margin: 0px;
+  padding-top: 16px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -711,6 +730,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
   color: #333333;
   background: #F2F2F2;
+  font-weight: 400;
 }
 
 .hotel-card-stars {
@@ -741,11 +761,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .catalog-title {
   margin: 0;
-  margin-right: 191px;
+  padding-right: 191px;
   padding-top: 7px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .catalog-view-button {
@@ -753,7 +774,6 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 4px;
   width: 48px;
   height: 48px;
-  margin-right: 8px;
   background-color: #ffffff;
   cursor: pointer;
 }
@@ -766,7 +786,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
+  padding-left: 0px;
 }
 
 .catalog-filter-group {
@@ -775,7 +796,14 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 0;
   width: 288px;
   margin-right: 70px;
-  margin-left: 105px;
+  margin-left: 108px;
+}
+
+.buttons-view {
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 48px 48px 48px;
+  column-gap: 8px;
 }
 
 .range-input {
@@ -847,7 +875,7 @@ input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
   height: 21px;
   bottom: 15px;
-  left: 108px;
+  left: 112px;
   color: rgba(255, 255, 255, 0.3);
   font-weight: 400;
   font-size: 18px;
@@ -857,7 +885,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 79px;
+  top: -5px;
   background-color:rgba(255, 255, 255, 0.3);
 }
 
@@ -876,6 +904,10 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 5px;
   cursor: pointer;
   border: 2px #FFFFFF;
+}
+
+.range {
+  max-height: 48px;
 }
 
 .toggle-min {
@@ -904,15 +936,11 @@ input[type="number"]::-webkit-inner-spin-button {
   box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 }
 
-.buttons-view {
-  margin-left: auto;
-  display: flex;
-}
-
 .select-control-view {
-  margin-right: 94px;
+  font-family: "PT Sans";
+  margin-right: 74px;
   min-width: 290px;
-  padding-left: 20px;
+  padding-left: 17px;
   justify-content: center;
   align-items: center;
   font-size: 18px;
@@ -920,6 +948,15 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #333333;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  background-image: url(../images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px top 45%;
+  appearance: none;
+}
+
+.field::placeholder {
+  font-family: "PT Sans";
+  padding-left: 20px;
 }
 
 .select-status:hover {
@@ -953,13 +990,17 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-top: 30px;
   padding-left: 73px;
   padding-right: 71px;
+  padding-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .pagination-link {
   display: block;
-  padding: 11px 23px 13px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-right: 25px;
+  padding-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -974,13 +1015,13 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .pagination-long-number {
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 19px;
+  padding-right: 19px;
 }
 
 .pagination-ellipsis {
   padding-left: 22px;
-  padding-right: 22px;
+  padding-right: 23px;
 }
 
 .hotel-card-link {
@@ -991,7 +1032,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .select-control-hotel {
   margin-left: auto;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 17px;
   width: 160px;
   height: 49px;
   font-size: 18px;
@@ -999,6 +1040,10 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #333333;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  background-image: url(../images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 14px top 45%;
+  appearance: none;
 }
 
 .select-control-inner {
@@ -1111,6 +1156,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .phone {
+  display: block;
+  padding-top: 5px;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
@@ -1302,16 +1349,37 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 26px;
   text-transform: capitalize;
   color: #000000;
-  margin-left: 3px;
+  padding-top: 12px;
 }
 
 .tooltip-button{
+  position: absolute;
   background-color: #83B3D3;
   border: none;
   width: 25px;
   height: 25px;
   border-radius: 50%;
   padding: 0;
+  background-image: url(../images/info.svg);
+  background-repeat: no-repeat;
+  background-size: 1px 9px;
+  background-position: center center;
+  margin-top: 3px;
+  margin-left: -1px;
+}
+
+.form-label .modal-label{
+  margin-right: 6px;
+  margin-top: 15px;
+}
+
+.tooltip{
+  position: relative;
+}
+
+.form-label{
+  padding-top: 10px;
+  margin-right: 43px ;
 }
 
 .tooltip-button:hover{
@@ -1334,7 +1402,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  margin-top: 8px;
+  padding-top: 6px;
 }
 
 .modal-input-message:first-of-type{
@@ -1389,6 +1457,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-right: 47px;
   padding-left: 19px;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
 .modal-age-wrapper{
@@ -1419,12 +1488,26 @@ input[type="number"]::-webkit-inner-spin-button {
   grid-template-columns: 47px 39px 47px;
 }
 
+.button-age-plus {
+  padding-left: 10px;
+  padding-right: 17px;
+  margin: 0px;
+}
+
+.button-age-minus {
+  background-color: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  margin: 0px;
+}
+
 .input-age::-webkit-outer-spin-button,
 .input-age::-webkit-inner-spin-button {
   appearance: none;
 }
 
 .button-age-icon{
+  width: 13px;
+  height: 13px;
   margin: auto;
   fill: #000000;
   opacity: 0.3;
@@ -1433,11 +1516,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .button-age:hover .button-age-icon{
   fill: #000000;
   opacity: 1;
-}
-
-.button-age-minus {
-  background-color: #F2F2F2;
-  border-radius: 4px 0 0 4px;
 }
 
 .button-age-plus {
@@ -1512,18 +1590,6 @@ background-color: #F2F2F2;;
 .modal-button-submit:active{
   color: rgb(255, 255, 255, 0.3);
   background-color: #68A2CA;
-}
-
-.form-label{
-  margin-top: 12px;
-}
-
-.form-label .modal-label{
-  margin-right: 3px;
-}
-
-.tooltip{
-  margin-right: 19px;
 }
 
 .modal-button-submit:disabled{
