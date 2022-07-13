@@ -36,6 +36,22 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.button {
+  margin: 0;
+  padding: 9px 15px 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background: #756157;
+  border: 0px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -61,6 +77,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .navigation {
@@ -186,21 +203,6 @@ input[type="number"]::-webkit-inner-spin-button {
 .welcome-img {
   display: block;
   margin: 51px 371px 82px;
-}
-
-.button {
-  padding: 9px 15px 8px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
-  background: #756157;
-  border: 0px;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .button-current {
@@ -460,6 +462,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .field {
+  margin: 0;
   border-radius: 10px 0px 0px 10px;
   width: 600px;
   height: 60px;
@@ -810,6 +813,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .range-input {
+  margin: 0;
   font-family: "PT Sans";
   font-size: 18px;
   line-height: 21px;
@@ -945,6 +949,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .select-control-view {
+  margin: 0;
   font-family: "PT Sans";
   margin-right: 74px;
   min-width: 290px;
@@ -1039,6 +1044,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .select-control-hotel {
+  margin: 0;
   margin-left: auto;
   align-items: center;
   padding-left: 17px;
@@ -1310,7 +1316,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .modal-button-close:focus{
   background-color: #E6E6E6;
-  /*border: 3px solid #83B3D3;*/
   box-shadow: 0 0 0 3px #83B3D3;
 }
 
@@ -1427,6 +1432,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .input-modal{
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1465,6 +1471,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .input-date{
+  margin: 0;
   width: 420px;
   padding-right: 47px;
   padding-left: 19px;
@@ -1488,6 +1495,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .input-age{
+  margin: 0;
   text-align: center;
 }
 
@@ -1610,8 +1618,8 @@ background-color: #F2F2F2;;
 
 .tooltip-text{
   position: absolute;
-  right: 37px;
-  bottom: -73px;
+  right: -140px;
+  bottom: -185px;
   width: 256px;
   background-color: #333333;
   color: #FFFFFF;
