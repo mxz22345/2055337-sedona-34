@@ -469,6 +469,7 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 21px;
   color: #000000;
   background: #F2F2F2;
+  cursor: pointer;
 }
 
 .filter-catalog {
@@ -504,7 +505,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .breadcrumbs-link {
   display: block;
   margin: 0;
-  padding-left: 15px;
+  padding-left: 17px;
   font-size: 16px;
   line-height: 21px;
   background-image: url("../images/breadcrumbs-arrow.svg");
@@ -615,7 +616,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .control-mark {
   position: absolute;
-  left: 0;
+  left: 3px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -668,11 +669,12 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 18px;
   line-height: 21px;
   padding-bottom: 15px;
-  padding-left: 39px;
+  padding-left: 42px;
+  cursor: pointer;
 }
 
 .hotel-list {
-  padding-bottom: 66px;
+  padding-bottom: 67px;
   display: grid;
   grid-template-columns: 340px 340px 340px;
   column-gap: 18px;
@@ -731,6 +733,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #333333;
   background: #F2F2F2;
   font-weight: 400;
+  cursor: default;
 }
 
 .hotel-card-stars {
@@ -786,7 +789,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
   padding-left: 0px;
 }
 
@@ -795,7 +798,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0;
   border: 0;
   width: 288px;
-  margin-right: 70px;
+  margin-right: 67px;
   margin-left: 108px;
 }
 
@@ -807,6 +810,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .range-input {
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 21px;
   box-sizing: border-box;
@@ -814,8 +818,12 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 21px;
   color: #ffffff;
   border: 0;
-  padding: 12px 17px 11px;
+  padding-left: 14px;
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-right: 14px;
   background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 
 .value-from:hover,
@@ -950,8 +958,9 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 4px;
   background-image: url(../images/arrow-down.svg);
   background-repeat: no-repeat;
-  background-position: right 14px top 45%;
+  background-position: right 13px top 45%;
   appearance: none;
+  cursor: pointer;
 }
 
 .field::placeholder {
@@ -1033,6 +1042,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-left: auto;
   align-items: center;
   padding-left: 17px;
+  margin-top: 2px;
   width: 160px;
   height: 49px;
   font-size: 18px;
@@ -1044,6 +1054,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-repeat: no-repeat;
   background-position: right 14px top 45%;
   appearance: none;
+  cursor: pointer;
 }
 
 .select-control-inner {
@@ -1299,7 +1310,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .modal-button-close:focus{
   background-color: #E6E6E6;
-  border: 3px solid #83B3D3;
+  /*border: 3px solid #83B3D3;*/
+  box-shadow: 0 0 0 3px #83B3D3;
 }
 
 .modal-button-close:active{
@@ -1489,7 +1501,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .button-age-plus {
-  padding-left: 10px;
+  padding-left: 12px;
   padding-right: 17px;
   margin: 0px;
 }
