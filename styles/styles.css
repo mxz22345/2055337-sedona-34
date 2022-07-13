@@ -422,7 +422,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .subscribe-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   width: 200px;
   padding: 12px 15px;
   font-size: 20px;
@@ -566,7 +566,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .filter-reset {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -587,7 +587,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .filter-apply {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   padding: 14px 15px;
   align-items: center;
   display: block;
@@ -814,7 +814,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .range-input {
   margin: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   box-sizing: border-box;
@@ -950,7 +950,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .select-control-view {
   margin: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   margin-right: 74px;
   min-width: 290px;
   padding-left: 17px;
@@ -969,7 +969,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .field::placeholder {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   padding-left: 20px;
 }
 
